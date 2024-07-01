@@ -1,0 +1,14 @@
+package bg.softuni.mobilele.service;
+
+import bg.softuni.mobilele.model.UserLoginDTO;
+import bg.softuni.mobilele.model.UserRegistrationDTO;
+
+public interface UserService {
+
+  void registerUser(UserRegistrationDTO userRegistration);
+
+  boolean login(UserLoginDTO userLoginDTO);
+
+  void logout();
+
+}
