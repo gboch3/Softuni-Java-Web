@@ -1,2 +1,2 @@
 # Spring Advanced Projects
-## Softuni Java Web
+## Softuni Java Web Course
