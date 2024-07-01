@@ -1,1 +1,1 @@
-# Softuni-Java-Web
+# Softuni Java Web Course Projects
