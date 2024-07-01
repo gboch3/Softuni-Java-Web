@@ -1,1 +1,2 @@
-# Softuni-Java-Web
+# Spring Fundamentals Projects
+## Softuni-Java-Web
