@@ -1,2 +1,2 @@
-# Spring Advanced Projects
-## Softuni Java Web Course
+# Mobilele Project
+## REST API and REST with Spring Lab
