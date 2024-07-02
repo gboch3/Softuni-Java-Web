@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+th {
+   background-color: #add8e6;
+}
+
+th, td {
+    border: 1px solid lightgray;
+    padding: 5px;
+}

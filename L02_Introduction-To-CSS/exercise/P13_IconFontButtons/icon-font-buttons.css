@@ -1,0 +1,29 @@
+.btn {
+    display: block;
+    width: 150px;
+    margin: 25px 0;
+    padding: 10px 0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+}
+
+.btn-click {
+    background-color:#008000;
+    border-color: #008000;
+}
+
+.btn-email {
+    background-color: #ffa501;
+    border-color: #ffa501;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn i {
+    margin-right: 10px;
+}
