@@ -1,0 +1,10 @@
+<div th:fragment="routes-by-category" xmlns="http://www.w3.org/1999/html">
+    <section class="road" th:each="route : ${routesByCategory}">
+        <div>
+            <h2 th:text="${route.name}">Title</h2>
+            <p th:text="${route.description}">Very long description</p>
+            <a th:href="@{/route-details/{id}(id=${route.id})}" class="btn">Learn More</a>
+        </div>
+        <img class="rounded-circle w-75 ml-5" th:src="${route.imageUrl}" alt="Title image">
+    </section>
+</div>

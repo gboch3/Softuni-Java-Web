@@ -1,0 +1,60 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head}"></head>
+<body>
+<main class="p-5 align-content-center bg-blur my-register-div">
+    <h1 class="    border-bottom mb-5">Login</h1>
+    <div class="d-flex justify-content-center">
+
+        <div class="row g-3 align-items-center">
+
+            <form
+                    th:method="POST"
+                    th:action="@{/users/login}"
+                    th:object="${loginData}"
+
+            >
+                <div
+                        class="bg-danger"
+                        th:if="${showErrorMessage}"
+                        th:text="'Invalid username or password'">
+                </div>
+                <div>
+                    <div class="col-auto">
+                        <label for="inputUsername" class="col-form-label ">Username</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text"
+                               th:field="*{username}"
+                               name="username"
+                               id="inputUsername"
+                               class="form-control"
+                               aria-describedby="usernameHelpInline"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div class="col-auto">
+                        <label for="inputPassword" class="col-form-label ">Password</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="password"
+                               th:field="*{password}"
+                               name="password"
+                               id="inputPassword"
+                               class="form-control"
+                               aria-describedby="passwordHelpInline"
+                        />
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-2">
+                    <button class="btn btn-primary btn-block w-50" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</main>
+<footer th:replace="~{fragments/footer}"></footer>
+</body>
+</html>
