@@ -1,0 +1,14 @@
+### GET request with parameter
+GET http://localhost:8080/api/convert?from=XXX&to=EUR&amount=50
+Accept: application/json
+
+### Send POST request with json body
+POST http://localhost:8081/offers
+Content-Type: application/json
+
+{
+  "description" : "Test offer",
+  "mileage" : "10000",
+  "price" : 120.20,
+  "engineType" : "PETROL"
+}
