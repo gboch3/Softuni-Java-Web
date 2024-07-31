@@ -1,2 +1,0 @@
-INSERT INTO roles VALUES (1, 'USER'), (2, 'ADMIN')
-INSERT INTO users_roles VALUES (4, 2)
